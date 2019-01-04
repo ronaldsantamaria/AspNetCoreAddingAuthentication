@@ -21,5 +21,13 @@ namespace WishList.Controllers
             _userManager = userManager;
             _signInManager = signInManager;
         }
+
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult Register()
+        {
+            return View();
+        }
     }
 }
